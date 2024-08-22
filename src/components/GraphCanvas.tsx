@@ -144,7 +144,7 @@ export function GraphCanvas({
             px-2 py-1 justify-between items-center hover:border-border-hover
             hover:cursor-pointer ml-auto"
         >
-          Download (PNG)
+          下载图片 (PNG)
         </a>
       </div>
     </div>

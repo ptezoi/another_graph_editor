@@ -17,11 +17,11 @@ export function GraphSettings({ directed, settings, setSettings }: Props) {
           hover:border-border-hover lg:right-1/24 xl:right-5/200 xl:w-1/5 p-3
           space-y-3"
       >
-        <h3 className="font-bold text-lg">Settings</h3>
+        <h3 className="font-bold text-lg">设置</h3>
 
         <br />
 
-        <h4 className="font-semibold">Label Offset</h4>
+        <h4 className="font-semibold">标签偏移量</h4>
         <input
           type="range"
           min={-2}
@@ -56,7 +56,7 @@ export function GraphSettings({ directed, settings, setSettings }: Props) {
         <br />
 
         <SettingsToggleSection
-          title={"Theme"}
+          title={"主题"}
           leftLabel={"Light"}
           rightLabel={"Dark"}
           toggleID={"settingsTheme"}
@@ -70,7 +70,7 @@ export function GraphSettings({ directed, settings, setSettings }: Props) {
 
         <br />
 
-        <h4 className="font-semibold">Node Radius</h4>
+        <h4 className="font-semibold">节点大小</h4>
         <input
           type="range"
           min={0}
@@ -97,7 +97,7 @@ export function GraphSettings({ directed, settings, setSettings }: Props) {
           }}
         />
 
-        <h4 className="font-semibold">Line Thickness</h4>
+        <h4 className="font-semibold">边粗细</h4>
         <input
           type="range"
           min={0}
@@ -155,7 +155,7 @@ export function GraphSettings({ directed, settings, setSettings }: Props) {
 
         {!directed ? (
           <SettingsToggleSection
-            title={"Tree Mode"}
+            title={"树"}
             leftLabel={"Off"}
             rightLabel={"On"}
             toggleID={"settingsTreeMode"}
@@ -168,7 +168,7 @@ export function GraphSettings({ directed, settings, setSettings }: Props) {
         )}
 
         <SettingsToggleSection
-          title={"Lock Mode"}
+          title={"锁定"}
           leftLabel={"Off"}
           rightLabel={"On"}
           toggleID={"settingsLockMode"}
